@@ -22,8 +22,8 @@ base(options)
             {
                 if (!optionsBuilder.IsConfigured)
                 {
-                    optionsBuilder.UseSqlServer("User ID=sa;Password=12345;Server=localhost;Database=ExoApi;-"
-                                   + "Database=ExoApi;Trusted_Connection=True;");
+                    optionsBuilder.UseSqlServer("User ID=sa;Password=12345;Server=localhost\\SQLEXPRESS1;Database=ExoApi;"
+               + "Trusted_Connection=False;");
 
                 }
             }
